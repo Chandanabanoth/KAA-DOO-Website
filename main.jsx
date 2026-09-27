@@ -3,17 +3,17 @@ import {createRoot} from "react-dom/client";
 import {
   Search, ShoppingBag, Menu, X, Plus, Minus, Trash2, ChevronRight,
   Star, Leaf, ShieldCheck, Truck, Heart, MessageCircle, ArrowRight,
-  Instagram, Facebook, MapPin, Phone, Mail
+  Instagram, Facebook,Whatsup, MapPin, Phone, Mail
 } from "lucide-react";
 import "./styles.css";
 
 const products = [
-  {id:1,name:"A2 Desi Ghee",slug:"a2-desi-ghee",price:649,mrp:749,size:"500 ml",cat:"Ghee",tag:"Bestseller",rating:4.9,desc:"Rich, aromatic ghee crafted for everyday cooking and traditional recipes.",emoji:"🫙"},
-  {id:2,name:"Forest Honey",slug:"forest-honey",price:399,mrp:449,size:"500 g",cat:"Honey",tag:"Pure",rating:4.8,desc:"Naturally golden honey with a smooth, floral finish.",emoji:"🍯"},
-  {id:3,name:"Organic Jaggery",slug:"organic-jaggery",price:249,mrp:299,size:"1 kg",cat:"Jaggery",tag:"Farm Fresh",rating:4.8,desc:"Deep, caramel-like sweetness made from traditionally processed sugarcane.",emoji:"🧱"},
-  {id:4,name:"Dry Ginger Powder",slug:"dry-ginger",price:179,mrp:219,size:"200 g",cat:"Dry Ginger",tag:"Aromatic",rating:4.7,desc:"Fine sun-dried ginger powder for chai, cooking and classic recipes.",emoji:"🌿"},
-  {id:5,name:"Ghee + Honey Duo",slug:"ghee-honey-duo",price:899,mrp:998,size:"500 ml + 500 g",cat:"Combos",tag:"Popular Combo",rating:4.9,desc:"A thoughtfully paired duo for your pantry and gifting moments.",emoji:"🎁"},
-  {id:6,name:"Traditional Wellness Mix",slug:"traditional-wellness-mix",price:499,mrp:579,size:"300 g",cat:"Combos",tag:"Signature",rating:4.9,desc:"A comforting blend inspired by familiar Indian pantry traditions.",emoji:"✨"}
+  {id:1,name:"A2 Pure Ghee",slug:"a2-pure-ghee",price:649,mrp:749,size:"500 ml",cat:"Ghee",tag:"Bestseller",rating:4.9,desc:"Rich, aromatic ghee crafted for everyday cooking and traditional recipes.",image:"/images/ghee.jpg"},
+  {id:2,name:"Pure Honey",slug:"forest-honey",price:399,mrp:449,size:"500 g",cat:"Honey",tag:"Pure",rating:4.8,desc:"Naturally golden honey with a smooth, floral finish.",image:"/images/pure-honey.jpg"},
+  {id:3,name:"Organic Jaggery",slug:"organic-jaggery",price:249,mrp:299,size:"1 kg",cat:"Jaggery",tag:"Farm Fresh",rating:4.8,desc:"Deep, caramel-like sweetness made from traditionally processed sugarcane.",image:"/images/jaggery.jpg"},
+  {id:4,name:"Dry Ginger Powder",slug:"dry-ginger",price:179,mrp:219,size:"200 g",cat:"Dry Ginger",tag:"Aromatic",rating:4.7,desc:"Fine sun-dried ginger powder for chai, cooking and classic recipes.",image:"/images/dry-ginger"},
+  {id:5,name:"Ghee + Jaggery Duo",slug:"ghee-Jaggery-duo",price:899,mrp:998,size:"500 ml + 500 g",cat:"Combos",tag:"Best Value",rating:4.9,desc:"A thoughtfully paired duo for your pantry and gifting moments.",image:/images/kaa-doo-jaggery-ghee-combo"},
+  {id:6,name:"Traditional Wellness Mix",slug:"traditional-wellness-mix",price:499,mrp:579,size:"300 g",cat:"Combos",tag:"Signature",rating:4.9,desc:"A comforting blend inspired by familiar Indian pantry traditions.",image:/images/traditional-wellness-mix.jpg"}
 ];
 
 const cats=["All","Ghee","Honey","Jaggery","Dry Ginger","Combos"];
@@ -50,7 +50,7 @@ function App(){
       cart.map(x=>`• ${x.name} (${x.size}) × ${x.qty} — ₹${x.price*x.qty}`).join("%0A")+
       `%0A%0ATotal: ₹${total}`
     );
-    window.open(`https://wa.me/919000000000?text=${text}`,"_blank");
+    window.open(`https://wa.me/917993499778?text=${text}`,"_blank");
   }
 
   return <div className="app">
